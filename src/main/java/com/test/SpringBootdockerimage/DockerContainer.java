@@ -10,5 +10,4 @@ public class DockerContainer {
 	{
 		return "hello from SpringBoot";
 	}
-
 }

@@ -12,8 +12,8 @@ phases:
     commands:
       - echo Build started on `date`
       - echo Building the Docker image...
-      - docker build -t microservicerepo
-      - docker tag microservicerepo:latest 787588272122.dkr.ecr.ap-south-1.amazonaws.com/microservicerepo:latest
+      - docker build -t $REPOSITORY_URI:latest .
+      - docker tag $REPOSITORY_URI:latest $REPOSITORY_URI:$IMAGE_TAG
    
     post_build:
       commands:
@@ -21,7 +21,7 @@ phases:
         - echo Pushing the Docker images...
         - echo Build completed on `date`
         - echo Pushing the Docker image...
-        - docker push 787588272122.dkr.ecr.ap-south-1.amazonaws.com/microservicerepo:latest
+        - docker push $REPOSITORY_URI:latest
         - echo Writing image definitions file...
         - printf '[{"name":"order-service","imageUri":"%s"}]' $REPOSITORY_URI:$IMAGE_TAG > imagedefinitions.json
         - cat imagedefinitions.json

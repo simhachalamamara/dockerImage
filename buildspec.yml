@@ -28,5 +28,5 @@ phases:
         - cat imagedefinitions.json
 artifacts:
    files:
-     - target/Spring-Boot-docker-image.jar
+     - target/Spring-Boot-docker-image-0.0.1-SNAPSHOT.jar
      - imagedefinitions.json

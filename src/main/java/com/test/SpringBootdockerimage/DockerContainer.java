@@ -10,7 +10,7 @@ public class DockerContainer {
 	{
 		return "hello from SpringBoot";
 	}
-	@GetMapping("/message2")
+	@GetMapping("/message3")
 	public String sayhello()
 	{
 		return "hello Mr Simhachalam";

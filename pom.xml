@@ -42,7 +42,7 @@
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
 		</plugins>
-		<fileName>Spring-Boot-docker-image</fileName>
+		<finalName>Spring-Boot-docker-image</finalName>
 		
 	</build>
 

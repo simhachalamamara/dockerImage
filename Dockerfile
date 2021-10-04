@@ -1,5 +1,5 @@
 FROM adoptopenjdk/openjdk11:alpine-jre
-Expose 2020
+EXPOSE 2020
 # Refer to Maven build -> finalName
 ARG JAR_FILE=/*.jar
 

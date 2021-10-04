@@ -1,7 +1,7 @@
 FROM adoptopenjdk/openjdk11:alpine-jre
 
 # Refer to Maven build -> finalName
-ARG JAR_FILE=target/Spring-Boot-docker-image.jar
+ARG JAR_FILE=target/*.jar
 
 # cd /opt/app
 WORKDIR /target

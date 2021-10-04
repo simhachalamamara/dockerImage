@@ -15,4 +15,9 @@ public class DockerContainer {
 	{
 		return "hello Mr Simhachalam";
 	}
+	@GetMapping("/message4")
+	public String sayhello()
+	{
+		return "hello Mr Simhachalam";
+	}
 }

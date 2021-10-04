@@ -46,7 +46,7 @@
   <configuration>
     <archive>
       <manifest>
-        <mainClass>fully.qualified.MainClass</mainClass>
+        <mainClass>com.test.SpringBootdockerimage.SpringBootDockerImageApplication</mainClass>
       </manifest>
     </archive>
     <descriptorRefs>

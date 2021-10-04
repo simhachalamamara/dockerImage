@@ -10,14 +10,5 @@ public class DockerContainer {
 	{
 		return "hello from SpringBoot";
 	}
-	@GetMapping("/message3")
-	public String sayhello()
-	{
-		return "hello Mr Simhachalam";
-	}
-	@GetMapping("/message5")
-	public String sayhello()
-	{
-		return "hello Mr Simhachalam";
-	}
+	
 }

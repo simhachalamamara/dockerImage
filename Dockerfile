@@ -1,8 +1,8 @@
 FROM adoptopenjdk/openjdk11:alpine-jre
-EXPOSE 2020
+
 # Refer to Maven build -> finalName
 ARG JAR_FILE=/*.jar
-
+EXPOSE 2020
 
 
 # cp target/spring-boot-web.jar /opt/app/app.jar

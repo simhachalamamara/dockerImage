@@ -1,12 +1,8 @@
-FROM adoptopenjdk/openjdk11:alpine-jre
-
-# Refer to Maven build -> finalName
-ARG JAR_FILE=/*.jar
-EXPOSE 2020
+FROM openjdk:8
 
 
-# cp target/spring-boot-web.jar /opt/app/app.jar
-COPY ${JAR_FILE} Spring-Boot-docker-image.jar
+EXPOSE 9090
 
-# java -jar /opt/app/app.jar
-ENTRYPOINT ["java","-jar","Spring-Boot-docker-image.jar"]
+ADD target/Spring-Boot-docker-image.jar Spring-Boot-docker-image.jar
+
+ENTRYPOINT ["java","-jar","/Spring-Boot-docker-image.jar"]

@@ -51,6 +51,16 @@ pipeline
                    }
                }
            }
+            stage('Testing Phase')
+           {
+               steps
+               {
+                   script
+                   {
+                      bat 'mvn test'
+                   }
+               }
+           }
        }
  
 }

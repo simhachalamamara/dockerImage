@@ -28,6 +28,16 @@ pipeline
                    }
                }
            }
+            stage('Testing Phase')
+           {
+               steps
+               {
+                   script
+                   {
+                      bat 'mvn test'
+                   }
+               }
+           }
            
            
            stage('Docker Build')
@@ -51,16 +61,7 @@ pipeline
                    }
                }
            }
-            stage('Testing Phase')
-           {
-               steps
-               {
-                   script
-                   {
-                      bat 'mvn test'
-                   }
-               }
-           }
+           
        }
  
 }
